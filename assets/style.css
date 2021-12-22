@@ -1,0 +1,316 @@
+body {
+    background-color: rgb(87, 86, 86);
+    color: rgb(238, 238, 238);
+    font-family: "Courier New";
+}
+.page > * {
+    margin: 15px;
+}
+
+h1 {
+    background-color: rgb(49, 49, 49);
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+}
+.stats-container > div {
+    width: 15%;
+    background-image: linear-gradient(rgb(73, 73, 73), rgb(46, 46, 46));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+.stats-container > * > P {
+    margin: 5px;
+}
+.stats-container > * > H2 {
+    margin: 5px;
+}
+.stats-container > .total-cases {
+    color: rgb(0, 81, 255);
+}
+.stats-container > .total-deaths {
+    color: red;
+}
+.stats-container > .total-active {
+    color: orange;
+}
+
+.category-container {
+    width: 20%;
+    font-size: 1.2em;
+}
+.category-container > #category-chooser {
+    color: black;
+}
+
+.evolution {
+    padding: 10px;
+    background-color: rgb(63, 63, 63);
+}
+.graph-map-attribute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.graph-map-attribute > #individual-attribute-dropdown {
+    width: 20%;
+    color: black;
+    padding: 0 5px;
+}
+.graph-map-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.graph-map-container > * {
+    width: 45%;
+}
+.individual-graph-container {
+    padding: 10px;
+    background-color: rgb(46, 46, 46);
+}
+.individual-graph-topbar {
+    display: flex;
+    justify-content: space-between;
+}
+.moving-average-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.moving-average-container > input {
+    width: 10%;
+}
+.moving-average-container > #individual-average {
+    padding: 0 5px;
+}
+.individual-graph-bottombar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.individual-graph-bottombar > #individual-country-dropdown {
+    width: 30%;
+    color: black;
+    padding: 0 5px;
+}
+.graph-map-date {
+    display: flex;
+    justify-content: center;
+}
+.graph-map-date > #individual-date-slider {
+    width: 80%;
+}
+
+.comparison {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(63, 63, 63);
+}
+.comparison > * {
+    width: 45%;
+}
+.comparison-graph-container {
+    padding: 10px;
+    background-color: rgb(46, 46, 46);
+}
+.moving-average-container > #comparison-average {
+    padding: 0 5px;
+}
+.comparison-graph-topbar {
+    display: flex;
+    justify-content: space-between;
+}
+.comparison-graph-bottombar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.comparison-graph-bottombar > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comparison-country-attribute-container > div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.comparison-country-container {
+    width: 50%;
+}
+#comparison-country-dropdown {
+    width: 100%;
+    color: black;
+    padding: 0 5px;
+}
+.comparison-attribute-container {
+    width: 50%;
+}
+#comparison-attribute-dropdown {
+    width: 100%;
+    color: black;
+    padding: 0 5px;
+}
+#comparison-date-slider {
+    width: 60%;
+}
+.evolution-graph-container {
+    padding: 10px;
+    background-color: rgb(46, 46, 46);
+}
+.evolution-attribute-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.evolution-attribute-container > #evolution-attribute-dropdown {
+    width: 30%;
+    color: black;
+    padding: 0 5px;
+}
+
+.correlation {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(63, 63, 63);
+}
+.correlation > * {
+    width: 100%;
+}
+.correlation-graph-container {
+    padding: 10px;
+    background-color: rgb(46, 46, 46);
+}
+.correlation-graph-topbar {
+    display: flex;
+    justify-content: space-between;
+}
+.correlation-date {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+.correlation-date > #correlation-date-slider {
+    width: 100%;
+}
+.correlation-attribute-factor-container {
+    display: flex;
+    justify-content: space-between;
+}
+.correlation-attribute-factor-container > div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+#correlation-attribute-dropdown {
+    color: black;
+    width: 50%;
+    padding: 0 5px;
+}
+.correlation-factor-container {
+    justify-content: flex-end;
+}
+#correlation-factor-dropdown {
+    color: black;
+    width: 50%;
+    padding: 0 5px;
+}
+.correlation-continent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.correlation-continent-container > #correlation-continent-dropdown {
+    width: 100%;
+    color: black;
+    padding: 0 5px;
+}
+.correlation-matrix-container {
+    padding: 10px;
+    background-color: rgb(46, 46, 46);
+}
+.correlation-matrix-date {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+.correlation-matrix-date > #correlation-matrix-date-slider {
+    width: 100%;
+}
+.correlation-matrix-continent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.correlation-matrix-continent-container > #correlation-matrix-continent-dropdown {
+    width: 100%;
+    color: black;
+    padding: 0 5px;
+}
+
+.prediction {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(63, 63, 63);
+}
+.prediction > * {
+    width: 45%;
+}
+.prediction-graph-container {
+    padding: 10px;
+    background-color: rgb(46, 46, 46);
+}
+.prediction-interval-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.prediction-interval-container > input {
+    width: 5%;
+    padding: 0 5px;
+}
+.prediction-graph-bottombar > * {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.prediction-graph-bottombar > * > * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+#prediction-country-dropdown {
+    width: 100%;
+    color: black;
+    padding: 0 5px;
+}
+#prediction-model-dropdown {
+    width: 100%;
+    color: black;
+    padding: 0 5px;
+}

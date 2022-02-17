@@ -133,9 +133,10 @@ def bar_race_plot(df, title, list_of_frames, new_daily, attribute="total_cases")
 
     return fig
 
-#########################################################################################
-#Ravi Correlation
+
 #################################################################################
+
+
 #Original Raw data
 df = pd.read_csv("https://covid.ourworldindata.org/data/owid-covid-data.csv")
 dates = sorted(df['date'].unique())
@@ -1100,7 +1101,7 @@ def MAE(y, y_hat):
 
 
 #################################################################
-#Correlation - Ravi - start
+
 global metric
 global factors
 
@@ -1181,10 +1182,6 @@ def update_CorrelationScatterGraph(hoverData,scatterToggle):
     else: return False,dash.no_update,dash.no_update
 
 
-
-##############################################################################
-#lines added 
-
 @app.callback(
     Output('CovidDataExplorer','figure'), #Dropdown Output
 
@@ -1220,9 +1217,7 @@ def display_toolTip(DateSliderValue):
     style={'width':'100px','border':'1px solid white','borderRadius':'10px','padding':'5px','position':'relative','left':position,'top':'-50px'}
     
     return text,style
-
-#Correlation - ravi - end
-#######################################################################
+    
 
 if __name__ == '__main__':
     app.run_server(host='0.0.0.0', port=8051)
